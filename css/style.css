@@ -1,8 +1,5 @@
-/* change these */
-
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
-@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -14,40 +11,38 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
-  --bg-color: red;
-  --link-color: green;
-  --link-hover-color: blue;
-  --color-4: hotpink;
-  --color-5: rebeccapurple;
+  --bg-color: rgb(123, 91, 212);
+  --link-color: #112e68;
+  --link-hover-color: #042f86;
+  --color-1: #202f4b;
+  --color-2: #24365a;
+  --color-3: #042f86;
+  --color-4: #10203f;
+  --color-5: #112e68;
 
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
+  --primary-font: "Chakra Petch", sans-serif;
+  --secondary-font: "Source Serif 4", sans-serif;
   --main-text-color: #000;
+  --main-background-color: #395283;
 
   --white-space: 1rem;
 }
 
-button {
-  transition: all 3s;
-}
-
-a {
-  transition: all 3s;
-}
-
 button:hover {
   background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
 }
 
 button:active {
-  background-color: var(--bg-color);
+  background-color: #10203f;
 }
 
 a:hover {
   color: var(--link-hover-color);
-  font-size: 4rem;
 }
+a:active {
+  color: #10203f;
+}
+
 html {
   font-size: 100%;
   font-family: var(--primary-font);
@@ -83,7 +78,7 @@ footer {
 
 .header-wrapper h2 {
   font-size: 1.6em;
-  color: rgba(255, 255, 255, 0.95);
+  color: #fffffff2;
   font-weight: bold;
   margin: var(--white-space) 0;
 }
@@ -99,6 +94,7 @@ footer {
 
 main {
   padding: calc(2 * var(--white-space));
+  background-color: var(--main-background-color);
 }
 
 section {
@@ -108,7 +104,7 @@ section {
 .section-heading {
   font-style: italic;
   font-size: 1.3rem;
-  color: #777;
+  color: #c2b9b9;
   margin: 0.5rem 0;
 }
 
@@ -128,15 +124,15 @@ ul li:last-child {
 }
 
 .color-swatch-1 {
-  background-color: var(--bg-color);
+  background-color: var(--color-1);
 }
 
 .color-swatch-2 {
-  background-color: var(--link-color);
+  background-color: var(--color-2);
 }
 
 .color-swatch-3 {
-  background-color: var(--link-hover-color);
+  background-color: var(--color-3);
 }
 
 .color-swatch-4 {
@@ -150,23 +146,18 @@ ul li:last-child {
 .textures li {
   height: 30vw;
   width: 40%;
-  margin-right: 5vw;
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  width: 80%;
 }
 
 .texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
-}
-
-.texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  width: 80%;
 }
 
 .texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
+  width: 80%;
 }
 
 .images ul {
@@ -188,10 +179,9 @@ button {
   text-decoration: none;
   font: bold 1.25em/1 var(--primary-font);
   letter-spacing: 1px;
-  color: white;
+  color: #c2b9b9;
   text-transform: uppercase;
-  text-shadow: 0px -1px 0px #0374a0;
-  transition: all 0.2s ease;
+
   cursor: pointer;
   margin: 0 1rem 0 0; /* 22S - 0 margin-bottom mobile */
 }
@@ -208,18 +198,20 @@ button:focus-within {
 }
 
 .typography-main {
-  color: var(--main-text-color);
+  color: #acacac;
 }
 
 .h1-sample {
   font-size: 2.4rem;
   font-weight: bold;
+  color: #c2b9b9;
 }
 
 .h2-sample {
   font-family: var(--secondary-font);
   font-style: italic;
   font-size: 1.25rem;
+  color: #c2b9b9;
 }
 
 p.typography-sample {
@@ -237,11 +229,10 @@ em {
 }
 
 a {
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   color: var(--link-color);
   font-weight: bold;
   text-decoration: none;
-  transition: all 0.2s;
 }
 
 p[class*="font-details-"] {
@@ -249,12 +240,14 @@ p[class*="font-details-"] {
   margin-bottom: calc(2 * var(--white-space));
   font-size: 0.75rem;
   font-family: var(--secondary-font);
-  color: #6f6f6f;
+  color: #c2b9b9;
 }
 
 .adjectives ul {
   font-size: 2rem;
-  opacity: 0.5;
+}
+.adjectives ul li {
+  color: #acacac;
 }
 
 .adjectives ul {
